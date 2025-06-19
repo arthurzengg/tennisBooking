@@ -27,7 +27,7 @@ A modern web application for booking tennis coaching sessions. This project allo
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/tennisBooking.git
+git clone https://github.com/arthurzengg/tennisBooking.git
 cd tennisBooking
 ```
 

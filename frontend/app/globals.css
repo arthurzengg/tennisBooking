@@ -10,6 +10,21 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+  /* 确保 sticky 定位在横向滚动时正常工作 */
+  .sticky-time-column {
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    background: inherit;
+  }
+  
+  .sticky-time-header {
+    position: sticky;
+    left: 0;
+    z-index: 20;
+    background: inherit;
+  }
 }
 
 @layer base {

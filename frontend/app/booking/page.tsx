@@ -133,11 +133,11 @@ export default function BookingPage() {
           </CardHeader>
           <CardContent className="p-2 md:p-6">
             {/* 移动端优化的表格 */}
-            <div className="overflow-x-auto">
-              <div className="min-w-[600px] border-2 border-gray-800 rounded-lg overflow-hidden shadow-lg relative">
+            <div className="overflow-x-auto relative scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+              <div className="min-w-[600px] border-2 border-gray-800 rounded-lg overflow-hidden shadow-lg bg-white">
                 {/* 表头 */}
                 <div className="grid grid-cols-8">
-                  <div className="border-r-2 border-gray-800 p-2 md:p-3 h-14 md:h-16 font-bold text-center bg-gradient-to-r from-green-100 to-green-200 flex items-center justify-center sticky left-0 z-10 shadow-md">
+                  <div className="border-r-2 border-gray-800 p-2 md:p-3 h-14 md:h-16 font-bold text-center bg-gradient-to-r from-green-100 to-green-200 flex items-center justify-center sticky-time-header shadow-lg">
                     <span className="text-xs md:text-sm font-semibold text-gray-700">时间</span>
                   </div>
                   {days.map((day, index) => (
@@ -154,7 +154,7 @@ export default function BookingPage() {
                 {/* 时间行 */}
                 {timeSlots.map((timeSlot, timeIndex) => (
                   <div key={timeSlot} className="grid grid-cols-8 border-t-2 border-gray-800">
-                    <div className="border-r-2 border-gray-800 p-1 md:p-3 h-14 md:h-16 font-semibold text-center bg-gradient-to-r from-gray-50 to-gray-100 flex items-center justify-center sticky left-0 z-10 shadow-md">
+                    <div className="border-r-2 border-gray-800 p-1 md:p-3 h-14 md:h-16 font-semibold text-center bg-gradient-to-r from-gray-50 to-gray-100 flex items-center justify-center sticky-time-column shadow-lg">
                       <span className="text-xs md:text-sm text-gray-700">{timeSlot}</span>
                     </div>
                     {days.map((day) => {
